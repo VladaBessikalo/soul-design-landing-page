@@ -19,7 +19,6 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: clip;
-
     display: flex;
     flex-direction: column;
 }
@@ -30,18 +29,6 @@ body {
 
     @media (max-width: $sm) {
         padding-top: 80px;
-    }
-
-    &__main {
-    }
-
-    &__about {
-    }
-
-    &__works {
-    }
-
-    &__contacts {
     }
 }
 
@@ -87,18 +74,14 @@ body {
         color: #00ADB5;
     }
 
-    @media(max-width:$lg) {
+    @media (max-width:$lg) {
         font-size: 52px;
     }
 
-    @media(max-width:$md) {
+    @media (max-width:$md) {
         font-size: 45px;
     }
 }
-
-
-
-// Header / NavBar
 
 .header {
     background-color: #222831;
@@ -132,12 +115,9 @@ body {
         font-size: 24px;
         line-height: 36px;
     }
-
-    &__menu {
-    }
 }
-.menu {
 
+.menu {
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -150,9 +130,6 @@ body {
         }
     }
 
-    &__item {
-    }
-
     &__link {
         transition: color 0.3s ease 0s;
 
@@ -162,9 +139,6 @@ body {
         }
     }
 }
-
-
-// Main block
 
 .main {
     padding-top: 93px;
@@ -248,13 +222,6 @@ body {
         }
     }
 
-    &__hire-button {
-    }
-
-    &__form {
-
-    }
-
     &__cv-button {
         span {
             display: inline-block;
@@ -264,7 +231,7 @@ body {
     }
 
     &__image {
-        flex: 0 0 42.8%; /* 535 / 1250 * 100% */
+        flex: 0 0 42.8%;
         text-align: center;
 
         @media (max-width: $xl) {
@@ -276,9 +243,6 @@ body {
         }
     }
 }
-
-
-// ABOUT ME
 
 .about {
     padding-top: 116px;
@@ -316,9 +280,6 @@ body {
         }
     }
 
-    &__title {
-    }
-
     &__text {
         max-width: 390px;
         line-height: 1.5;
@@ -334,7 +295,7 @@ body {
     }
 
     &__image {
-        flex: 0 0 53.2%; /* 665/1250*100% */
+        flex: 0 0 53.2%;
         text-align: center;
 
         img {
@@ -342,9 +303,6 @@ body {
         }
     }
 }
-
-
-// WORKS
 
 .works {
     padding-top: 146px;
@@ -356,13 +314,9 @@ body {
         padding-bottom: 70px;
     }
 
-    @media(max-width:$lg) {
+    @media (max-width:$lg) {
         padding-top: 45px;
         padding-bottom: 45px;
-    }
-
-
-    &__container {
     }
 
     &__title {
@@ -370,32 +324,23 @@ body {
             margin-bottom: 16px;
         }
 
-        @media(max-width:$md) {
+        @media (max-width:$md) {
             text-align: center;
         }
-    
-    }
-
-    &__items {
-
     }
 }
 
 .items-works {
-
     &__navigation {
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
         margin-bottom: 48px;
 
-        @media(max-width:$md) {
+        @media (max-width:$md) {
             justify-content: center;
             margin-bottom: 20px;
         }
-    }
-
-    &__type {
     }
 
     &__body {
@@ -403,7 +348,7 @@ body {
         grid-template-columns: repeat(auto-fill,minmax(280px, 1fr));
         gap: 45px;
 
-        @media(max-width:$md) {
+        @media (max-width:$md) {
             gap: 15px;
         }
     }
@@ -430,9 +375,6 @@ body {
     }
 }
 
-
-// CONTACTS
-
 .contacts {
     padding-top: 157px;
     padding-bottom: 125px;
@@ -458,9 +400,6 @@ body {
         }
     }
 
-    &__content {
-    }
-
     &__title {
         line-height: 1.25;
 
@@ -480,9 +419,6 @@ body {
             max-width: 100%;
         }
     }
-
-    &__form {
-    }
 }
 
 .form {
@@ -496,7 +432,6 @@ body {
     }
 
     &__item {
-
         &:nth-child(3) {
             grid-column: span 2;
         }
@@ -530,12 +465,10 @@ body {
         &:focus::placeholder {
             opacity: 0;
         }
-
     }
 
 
     &__button {
-
         @media (max-width: $sm) {
             width: 100%;
         }
@@ -554,28 +487,15 @@ textarea.form__input {
     resize: vertical;
 }
 
-
-
-// Footer
 .footer {
     padding-top: 50px;
     padding-bottom: 50px;
     border-top: 1px solid rgba(238, 238, 238, 0.1);
 
-
-    &__container {
-
-    }
-
     &__menu {
-
         &:not(:last-child) {
             margin-bottom: 28px;
         }
-        
-    }
-
-    &__social {
     }
 }
 .menu-footer {
@@ -589,10 +509,6 @@ textarea.form__input {
         align-items: center;
     }
 
-    &__item {
-
-    }
-
     &__link {
         display: flex;
         line-height: calc(27 / 18 * 100%);
@@ -601,15 +517,6 @@ textarea.form__input {
         &:hover {
             content: '';
             text-decoration: underline;
-        }
-
-        &_home {
-        }
-
-        &_about {
-        }
-
-        &_contact {
         }
     }
 }
@@ -635,10 +542,7 @@ textarea.form__input {
     }
 }
 
-
-
 .modal {
-
     &__container {
         display: none;
         position: fixed;
@@ -656,9 +560,6 @@ textarea.form__input {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        // width: 800px;
-        // height: 500px;
-
         background: rgb(111, 113, 117);
         border-radius: 16px;
         display: flex;
@@ -666,10 +567,9 @@ textarea.form__input {
         justify-content: center;
         padding: 20px 50px;
 
-            & :not(:last-child) {
-                margin-bottom: 25px;
-            }
-        
+        & :not(:last-child) {
+            margin-bottom: 25px;
+        }
     }
 
     &__title {
@@ -677,10 +577,6 @@ textarea.form__input {
         justify-content: space-between;
         align-items: baseline;
         font-weight: 700;
-
-        h3 {
-
-        }
     }
 
     &__close-btn {
@@ -702,14 +598,7 @@ textarea.form__input {
     &__input {
         color: #393E46;
     }
-
-    &__buttons {
-
-    }
 }
-
-
-// File for uploading
 
 #file-chosen {
     color: #EEEEEE;

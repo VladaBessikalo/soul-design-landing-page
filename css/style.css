@@ -26,6 +26,7 @@ body {
     padding-top: 80px;
   }
 }
+
 [class*=__container] {
   max-width: 1280px;
   padding-left: 15px;
@@ -107,6 +108,7 @@ body {
   font-size: 24px;
   line-height: 36px;
 }
+
 .menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -219,7 +221,7 @@ body {
   padding-right: 34px;
 }
 .main__image {
-  flex: 0 0 42.8%; /* 535 / 1250 * 100% */
+  flex: 0 0 42.8%;
   text-align: center;
 }
 @media (max-width: 1199.98px) {
@@ -285,7 +287,7 @@ body {
   }
 }
 .about__image {
-  flex: 0 0 53.2%; /* 665/1250*100% */
+  flex: 0 0 53.2%;
   text-align: center;
 }
 .about__image img {
@@ -317,6 +319,7 @@ body {
     text-align: center;
   }
 }
+
 .items-works__navigation {
   display: flex;
   flex-wrap: wrap;
@@ -406,6 +409,7 @@ body {
 .contacts__image img {
   max-width: 100%;
 }
+
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -478,6 +482,7 @@ textarea.form__input {
 .footer__menu:not(:last-child) {
   margin-bottom: 28px;
 }
+
 .menu-footer__list {
   display: flex;
   -moz-column-gap: 48px;
@@ -497,6 +502,7 @@ textarea.form__input {
   content: "";
   text-decoration: underline;
 }
+
 .social {
   display: flex;
   justify-content: center;
@@ -565,6 +571,7 @@ textarea.form__input {
 .modal__input {
   color: #393E46;
 }
+
 #file-chosen {
   color: #EEEEEE;
   margin: 40px 20px 20px;
