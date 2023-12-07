@@ -10,13 +10,6 @@ const uploadCvBtn = document.querySelector('.main__cv-button');
 const fileChosen = document.getElementById('file-chosen');
 const sendCv = document.querySelector('#send-cv');
 
-
-// window.addEventListener('load', windowLoad);
-
-// function windowLoad() {
-//     document.addEventListener('click', documentActions);
-// }
-
 hireBtn.addEventListener('click', function() {
     modalContainer.style.display = 'block';
 })
